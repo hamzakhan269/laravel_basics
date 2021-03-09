@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\user1;
+use App\User;
 class Users extends Controller
 {
     //
@@ -13,8 +13,11 @@ class Users extends Controller
     // 		// $users=DB::table('customers')->get(); 
     	
     //  }
-     function index()
+     function list()
      {
-     	return user1::all();
+        
+     	// return User::all();
+        // print_r($req->file());
+        // echo "code jds";
      }
 }

@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('db', 'Users@index');
-Route::get('list', 'Companies@list');
-// Route::view('form', 'user');
+Route::get('list','Users@list');
+// Route::get('list', 'Companies@list');
+// Route::post('upload','Users@index');
+// Route::view('form','userform');
+// // Route::view('form', 'user');
 // Route::post('submit', 'Users@submit');
 // Route::get('db', 'Customers@dbcheck');
