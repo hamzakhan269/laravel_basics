@@ -12,10 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+     return view('welcome');
+    // $to_name='hamza khan';
+    // $to_email= "hamzakhan0269@gmail.com";
+    // $data= array('name' => 'ali', 'body' => "Test mail like");
+    // Mail::send('mail', $data, function ($message) use ($to_name, $to_email) {
+    // 	$message->to($to_email)
+    // 		->subject('Web testting mail');
+    // });
+    // echo "email has been sent";
+ 
 });
-Route::get('db', 'Users@index');
-Route::get('list','Users@list');
+Route::get('export', 'Products@exportData');
+// Route::get('pdf','PDFmaker@gen');
+// Route::get('db', 'Users@index');
+// Route::get('list','Users@list');
+// Route::post('submit', 'Companies@save');
+// Route::post('update', 'Companies@update');
+// Route::view('form', 'companyform');
 // Route::get('list', 'Companies@list');
 // Route::post('upload','Users@index');
 // Route::view('form','userform');
